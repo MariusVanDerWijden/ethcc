@@ -58,7 +58,7 @@ func testEthclient(backend *ethclient.Client, sk *ecdsa.PrivateKey) {
 }
 
 func getRealBackend() (*ethclient.Client, *ecdsa.PrivateKey) {
-	// eth.sendTransaction({from:personal.listAccounts[0], to:"0xb02A2EdA1b317FBd16760128836B0Ac59B560e9D", value: "100000000000000"})
+	// eth.sendTransaction({from:personal.listAccounts[0], to:"0x6177843db3138ae69679A54b95cf345ED759450d", value: "1000000000000000000"})
 
 	sk := crypto.ToECDSAUnsafe(common.FromHex(SK))
 	if crypto.PubkeyToAddress(sk.PublicKey).Hex() != ADDR {
